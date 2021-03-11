@@ -1,12 +1,12 @@
 # Create a bucket
 
 resource "aws_s3_bucket" "b1" {
-  bucket = "deepti1301"
+  bucket = "s3bucket-creation-from-jenkins-pipeline"
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name        = "Mybucket"
+    Environment = "PROD"
   }
 }
 
